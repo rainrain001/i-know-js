@@ -55,8 +55,8 @@ function isPangram(string) {
 
 `@param type: Object key to use for grouping.`
 
+`@example Collection`
 ```
-@example Collection
   [
      { name: 'Task 1', status: 'todo' }, 
      { name: 'Task 2', status: 'in-progress' }, 
@@ -64,8 +64,8 @@ function isPangram(string) {
      { name: 'Task 4', status: 'in-progress'}
   ]
 ```
+`@example Tranform and group by`
 ```
- @example Tranform and group by
   [
      [ { name: 'Task 1', status: 'todo' } ],
      [ { name: 'Task 2', status: 'in-progress' }, { name: 'Task 4', status: 'in-progress' } ],
