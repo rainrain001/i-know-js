@@ -84,3 +84,11 @@ function transformGroupBy(collection, type) {
   }, {}))
 }
 ```
+
+
+## Define Vue component instance out of `defineComponent`
+[Referrence](https://stackoverflow.com/questions/63985658/how-to-type-vue-instance-out-of-definecomponent-in-vue-3/63986086#63986086)
+```
+import { ComponentPublicInstance } from 'vue';
+let instance: ComponentPublicInstance<{ prop: string }, { value: string }>;
+```
