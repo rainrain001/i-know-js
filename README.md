@@ -47,6 +47,19 @@ function isPangram(string) {
 }
 ```
 
+```
+function isPangram(str) {
+  const result = new Set()
+  for (let i=0; i < str.length; i++) {
+    const char = str[i].charCodeAt()
+    if ((char >= 97 || char <= 122  || char >= 65 || char <= 90) && str[i] != ' ') {
+      result.add(str[i])
+    }
+  }
+  return result.size == 26
+}
+```
+
 
 ## GroupBy: Array of object into Array of array
 > Transform the collection from Array of object into Array of array which is group by `type` as object key as example.
