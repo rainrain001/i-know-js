@@ -105,3 +105,37 @@ function transformGroupBy(collection, type) {
 import { ComponentPublicInstance } from 'vue';
 let instance: ComponentPublicInstance<{ prop: string }, { value: string }>;
 ```
+
+## Fibonacci
+
+Imperative
+```
+  function fibonacci(n) {	
+    let flag = 0
+    const seq = []
+
+    while (flag <= n) {
+      if (flag === 0) {
+        seq.push(0)
+      } else if (flag === 1 || flag === 2) {
+        seq.push(1)
+      } else {
+        seq.push(seq[flag - 2] + seq[flag - 1])
+      }
+
+      flag++
+    }
+
+    return seq
+  }
+```
+
+Recursion
+```
+function fibonacci(n) {
+  if (n < 2) {
+    return n
+  }
+  return fibonacci(n - 2) + fibonacci(n - 1)
+}
+```
