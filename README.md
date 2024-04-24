@@ -139,3 +139,12 @@ function fibonacci(n) {
   return fibonacci(n - 2) + fibonacci(n - 1)
 }
 ```
+
+## Capitalize each word in a single string
+```
+function toCapitalize(str) {
+	return str.replaceAll(/\b[a-zA-Z0-9]/gi, (value) => {
+		return value.toUpperCase()
+	})
+}
+```
