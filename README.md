@@ -150,8 +150,19 @@ function toCapitalize(str) {
 ```
 
 ## Factorial
+
 ```
 function factorial (n) {
 	return (n === 0) ? 1 : n * factorial(n - 1)
+}
+```
+
+Tail recursion
+```
+function factorial (n) {
+	function iter (ctr, result) {
+		return (ctr === 0) ? result : iter(ctr - 1, ctr * result)
+	}
+	return iter(n, 1)
 }
 ```
