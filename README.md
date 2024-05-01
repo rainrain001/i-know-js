@@ -166,3 +166,7 @@ function factorial (n) {
 	return iter(n, 1)
 }
 ```
+
+## Event Bus
+Refer to this link ⤵️
+https://github.com/rainrain001/i-know-js/blob/52b813706ff4ec8db6319d27800ae83be1f5f0a1/EventBus/index.ts
